@@ -74,7 +74,8 @@ function AudioRecorder(props: any) {
         onMouseEnter={() => setIsHoveredStart(true)}
         onMouseLeave={() => setIsHoveredStart(false)}
       >
-        {recorderControls.isRecording && !recorderControls.isPaused ? props.args.pause_prompt : props.args.start_prompt}
+        {/* {recorderControls.isRecording && !recorderControls.isPaused ? props.args.pause_prompt : props.args.start_prompt} */}
+        {recorderControls.isRecording && !recorderControls.isPaused ? props.args.pause_prompt : <img src="mic.svg" alt="Mic Icon" style={{ height: '20px', width: '20px' }} />}
       </button>
       <button
         onClick={recorderControls.stopRecording}
@@ -91,7 +92,8 @@ function AudioRecorder(props: any) {
         onMouseEnter={() => setIsHoveredStop(true)}
         onMouseLeave={() => setIsHoveredStop(false)}
       >
-        {props.args.stop_prompt}
+        {/* {props.args.stop_prompt} */}
+        <img src="stop.svg" alt="Stop Icon" style={{ height: '20px', width: '20px' }} />
       </button>
     </span>
   ) : (

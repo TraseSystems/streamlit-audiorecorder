@@ -1,6 +1,6 @@
 __pycache__/
 node_modules/
-build/
+# build/
 dist/
 *.egg-info/
 .DS_Store
